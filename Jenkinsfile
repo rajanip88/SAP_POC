@@ -19,10 +19,10 @@ pipeline {
           //get oauth token for Cloud Integration
           println("requesting oauth token");
 			println("I entered my test value");
-		println("env.CPIOAuthHost" + env.CPI_HOST);
+		println("env.CPIOAuthHost" + CPIHost);
 			println("CPIOAuthHost"+CPIOAuthHost);
 		
-			println("env.CPIOAuthCredentials"+env.CPIOAuthCredentials);
+			println("env.CPIOAuthCredentials"+CPIOAuthCredentials);
           def getTokenResp = httpRequest acceptType: 'APPLICATION_JSON',
             authentication: "${env.CPIOAuthCredentials}",
             contentType: 'APPLICATION_JSON',
