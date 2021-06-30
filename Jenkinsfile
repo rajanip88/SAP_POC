@@ -6,10 +6,10 @@ pipeline {
     IntegrationFlowID = "IntegrationFlow1"
     GetEndpoint = true //If you don't need the endpoint or the artefact does not provide an endpoint, set the value to false
     DeploymentCheckRetryCounter = 20 //multiply by 3 to get the maximum deployment time
-	  CPIHost = "${env.CPI_HOST}"
+	  CPIHost = "4858fb22trial.it-cpitrial04.cfapps.eu10-002.hana.ondemand.com"
 	  
-	  CPIOAuthHost = "${env.CPI_OAUTH_HOST}"
-	  CPIOAuthCredentials = "${env.CPI_OAUTH_CRED}"	
+	  CPIOAuthHost = "4858fb22trial.authentication.eu10.hana.ondemand.com"
+	  CPIOAuthCredentials = "f06c0988-4679-4ad3-b938-720cf3e30ce3$9xmIdLa0MOgVqZMWVdnUAnNSPymwjRI1-efnkeH9gvY="	
   }
 
   stages {
