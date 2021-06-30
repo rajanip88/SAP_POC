@@ -19,7 +19,7 @@ pipeline {
           //get oauth token for Cloud Integration
           println("requesting oauth token");
 			println("I entered my test value");
-		println("env.CPIOAuthHost"+env.CPIOAuthHost);
+		println("env.CPIOAuthHost"+env.CPI_HOST);
 			println("CPIOAuthHost"+CPIOAuthHost);
 		
 			println("env.CPIOAuthCredentials"+env.CPIOAuthCredentials);
