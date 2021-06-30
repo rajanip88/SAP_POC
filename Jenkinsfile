@@ -9,7 +9,7 @@ pipeline {
 	  CPIHost = "4858fb22trial.it-cpitrial04.cfapps.eu10-002.hana.ondemand.com"
 	  
 	  CPIOAuthHost = "4858fb22trial.authentication.eu10.hana.ondemand.com"
-	  CPIOAuthCredentials = "f06c0988-4679-4ad3-b938-720cf3e30ce3$9xmIdLa0MOgVqZMWVdnUAnNSPymwjRI1-efnkeH9gvY="	
+	  CPIOAuthCredentials = "f06c0988-4679-4ad3-b938-720cf3e30ce3$9xmIdLa0MOgVqZMWVdnUAnNSPymwjRI1-efnkeH9gvY="
   }
 
   stages {
