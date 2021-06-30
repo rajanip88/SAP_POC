@@ -7,6 +7,7 @@ pipeline {
     GetEndpoint = true //If you don't need the endpoint or the artefact does not provide an endpoint, set the value to false
     DeploymentCheckRetryCounter = 20 //multiply by 3 to get the maximum deployment time
 	  CPIHost = "${env.CPI_HOST}"
+	  
 	  CPIOAuthHost = "${env.CPI_OAUTH_HOST}"
 	  CPIOAuthCredentials = "${env.CPI_OAUTH_CRED}"	
   }
@@ -17,6 +18,10 @@ pipeline {
         script {
           //get oauth token for Cloud Integration
           println("requesting oauth token");
+		println("env.CPIOAuthHost"+env.CPIOAuthHost);
+			println("CPIOAuthHost"+CPIOAuthHost);
+		
+			println("env.CPIOAuthCredentials"+env.CPIOAuthCredentials);
           def getTokenResp = httpRequest acceptType: 'APPLICATION_JSON',
             authentication: "${env.CPIOAuthCredentials}",
             contentType: 'APPLICATION_JSON',
